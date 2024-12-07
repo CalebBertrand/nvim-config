@@ -17,6 +17,8 @@ return require('packer').startup(function(use)
 		config = function() require('tokyodark').setup({ transparent_background = true }) end
 	}
 
+    use { "ellisonleao/gruvbox.nvim" }
+
 	use {
 		'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }
 	}
@@ -33,6 +35,6 @@ return require('packer').startup(function(use)
 	use('hrsh7th/nvim-cmp')
 	use('hrsh7th/cmp-nvim-lsp')
 
-    use('ThePrimeagen/vim-be-good', { run = ':TSUpdate' })
+    use { 'norcalli/nvim-colorizer.lua' }
 end)
 
