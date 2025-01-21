@@ -35,6 +35,8 @@ lspconfig.lua_ls.setup({
 })
 
 lspconfig.html.setup{}
+lspconfig.pylsp.setup{}
+lspconfig.rust_analyzer.setup{}
 lspconfig.angularls.setup{}
 lspconfig.ts_ls.setup({
     init_options = {

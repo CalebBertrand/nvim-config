@@ -18,3 +18,4 @@ vim.opt.undofile = true
 vim.opt.scrolloff = 8
 
 vim.o.termguicolors = true
+vim.o.ignorecase = true
