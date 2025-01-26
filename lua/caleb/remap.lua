@@ -1,3 +1,4 @@
+vim.keymap.set('v', 'p', 'P')
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>xp", vim.cmd.Ex)
 
