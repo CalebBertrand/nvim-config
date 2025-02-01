@@ -2,7 +2,8 @@ vim.keymap.set('v', 'p', 'P')
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>xp", vim.cmd.Ex)
 
-vim.keymap.set('i', '<C-l>', '<C-o>$')
+vim.keymap.set('i', '<C-e>', '<C-o>$')
+vim.keymap.set('i', '<C-a>', '<C-o>_')
 
 vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
 vim.keymap.set('t', '<C-p>', function()
