@@ -17,8 +17,10 @@ local lsp_attach = function(_, bufnr)
     vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
     vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
     vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
-    vim.keymap.set('n', 'Q', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+    vim.keymap.set('n', 'H', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
     vim.keymap.set('n', 'gn', vim.diagnostic.goto_next, { noremap = true, silent = true })
+    vim.keymap.set('n', 'gp', vim.diagnostic.goto_prev, { noremap = true, silent = true })
+    vim.keymap.set('n', 'L', '<cmd>lua vim.diagnostic.open_float()<cr>', { noremap = true, silent = true })
 end
 
 lsp_zero.extend_lspconfig({
@@ -34,6 +36,7 @@ lspconfig.lua_ls.setup({
     end,
 })
 
+lspconfig.pylsp.setup{}
 lspconfig.html.setup{}
 lspconfig.pylsp.setup{}
 lspconfig.rust_analyzer.setup{}
@@ -56,6 +59,10 @@ lspconfig.ts_ls.setup({
     },
 })
 lspconfig.volar.setup{}
+
+vim.diagnostic.config({
+  virtual_text = false
+})
 
 local cmp = require('cmp')
 

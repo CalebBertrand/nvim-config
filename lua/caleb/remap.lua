@@ -1,6 +1,5 @@
 vim.keymap.set('v', 'p', 'P')
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>xp", vim.cmd.Ex)
 
 vim.keymap.set('i', '<C-e>', '<C-o>$')
 vim.keymap.set('i', '<C-a>', '<C-o>_')
