@@ -1,4 +1,5 @@
 vim.keymap.set('v', 'p', 'P')
+vim.keymap.set('v', '<C-f>', '"hy/\\V<C-R>h<CR>')
 vim.g.mapleader = " "
 
 vim.keymap.set('i', '<C-e>', '<C-o>$')
