@@ -5,7 +5,7 @@ require'nvim-treesitter.configs'.setup {
   sync_install = false,
 
   uto_install = true,
-  
+
   highlight = {
     enable = true,
  },

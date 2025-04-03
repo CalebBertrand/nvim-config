@@ -55,6 +55,8 @@ lspconfig.ts_ls.setup({
     filetypes = {
         "javascript",
         "typescript",
+        "typescriptreact",
+        "javascriptreact",
         "vue"
     },
 })

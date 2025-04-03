@@ -1,1 +1,1 @@
-vim.cmd('colorscheme pastelnight')
+vim.cmd('colorscheme retrobox')

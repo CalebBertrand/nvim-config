@@ -45,6 +45,7 @@ require("lazy").setup({
             require('tokyodark')
         end
     },
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
     {
         'nvim-treesitter/nvim-treesitter',
@@ -82,7 +83,7 @@ require("lazy").setup({
     {
         'akinsho/toggleterm.nvim',
         version = "*", opts = {
-            open_mapping = [[<c-`>]],
+            open_mapping = [[<C-`>]],
             direction = 'float',
             float_opts = {
                 border = 'curved'
@@ -93,6 +94,8 @@ require("lazy").setup({
         "oncomouse/lazygit.nvim",
         cmd = "LazyGit",
         keys = { "<Plug>(lazygit.nvim)" },
-    }
+    },
+    { 'numToStr/Comment.nvim' },
+    { 'JoosepAlviste/nvim-ts-context-commentstring' },
 })
 
