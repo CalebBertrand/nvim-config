@@ -18,3 +18,16 @@ vim.api.nvim_set_keymap("n", "<S-Tab>", "<<", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<C-c>", '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<C-v>", '"+p', { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap("n", "<C-t>", ":tabnew<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-t>", "<Esc>:tabnew<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<C-K>", "k<C-Y>", { noremap = true });
+vim.keymap.set("n", "<C-J>", "j<C-Y>", { noremap = true });
+
+vim.keymap.set('n', '<C-j>', ':m .+1<CR>==', { noremap = true, silent = true })
+vim.keymap.set('i', '<C-j>', '<Esc>:m .+1<CR>==gi', { noremap = true, silent = true })
+vim.keymap.set('v', '<C-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+
+vim.keymap.set('n', '<C-k>', ':m .-2<CR>==', { noremap = true, silent = true })
+vim.keymap.set('i', '<C-k>', '<Esc>:m .-2<CR>==gi', { noremap = true, silent = true })
+vim.keymap.set('v', '<C-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
